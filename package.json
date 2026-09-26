@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-zendesk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Zendesk MCP Pack — tickets, users, organizations via OAuth.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-083780f3be0ebb3803d1d2016af5ea8ea45f328c96c0c4e39137e4fad425c09f",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-3836a7bc2802fd2166b68aae83969a844656ac68148d80ea082fc8ccde7c377f",
+    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
   }
 }
