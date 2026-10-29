@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-zendesk",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Zendesk MCP Pack — tickets, users, organizations via OAuth.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-zendesk": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "zendesk"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-zendesk.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/zendesk",
   "pipeworx": {
-    "sourceHash": "v1-3836a7bc2802fd2166b68aae83969a844656ac68148d80ea082fc8ccde7c377f",
-    "sourceCommit": "2cb50b368da3267446f2b6f6a3ddbd3d0eed3d73"
+    "mode": "gateway",
+    "slug": "zendesk",
+    "gatewaySlug": "zendesk",
+    "sourceHash": "v1-c76c44bcd69047e9eb36d62a116d24fb245a6791e0498d299e906d15dcc2340b",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
